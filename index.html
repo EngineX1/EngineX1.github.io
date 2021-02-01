@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Pour acéder au site : http://localhost/Atelier_pro/page_de_contact.php-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!-- La police selectionné -->
+	 <link href="https://fonts.googleapis.com/css?family=Baloo+2|Lobster&display=swap" rel="stylesheet">
+<!-- Le lien entre la page HTML et la Page CSS -->
+	<link rel="stylesheet" href="style.css" >
+<!-- Ici le titre de la page de contact -->
+	<title>Page de contact</title>
+</head>
+<body>
+<!-- Le titre principale noté contact -->
+	<div class="container">
+		<h1 class="title title-1">Contact</h1>
+
+		<form>
+<!-- Ici le premier carré pour le formulaire --> 			
+			<div class="form_group">
+				<input type="text" class="form_input" id="nom" placeholder="Votre nom" required>
+				<label for="nom" class="form_label">
+					Votre nom
+				</label>
+			</div>
+
+<!--Ici le deuxième carré pour l'email du  formulaire -->
+			<div class="form_group">
+				<input type="email" class="form_input" id="email" placeholder="Votre e-mail" required>
+				<label for="email" class="form_label">
+					Votre email
+				</label>
+			</div>
+
+<!-- Ici le troisième carré pour le  numéro de téléphone du formulaire -->
+			<div class="form_group">
+				<input type="tel" class="form_input" id="numero" placeholder="Votre numéro" required step="1" >
+				<label for="numero" class="form_label">
+					Votre numéro
+				</label>
+			</div>
+
+<!-- Ici pour permettre d'adresser un message facultatif dans le formulaire -->
+			<div class="form_message">
+				<label for="" class="form_message-label"> Message complémentaire(facultatif):</label>
+				<textarea name="" id="message" cols="30" rows="10" class="form_input message_input"></textarea>
+			</div>
+
+<!--Ajout d'un bouton Envoyer avec une fleche -->
+			<div class="submit">
+				<button class="submitBtn">Envoyer &rarr;</button>
+			</div>
+
+		</form>
+		
+	</div>
+</body>
+</html>
